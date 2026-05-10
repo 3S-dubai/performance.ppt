@@ -39,8 +39,8 @@ html, body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 40px 80px 80px;
+  justify-content: center;
+  padding: 48px 80px 80px;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -60,7 +60,6 @@ html, body {
 .slide-cover {
   align-items: center;
   text-align: center;
-  justify-content: center;
   background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201,168,76,0.06) 0%, transparent 70%);
 }
 
@@ -133,17 +132,17 @@ html, body {
   text-transform: uppercase;
   color: var(--gold);
   opacity: 0.8;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 /* ── SLIDE TITLE ── */
 .slide-title {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(28px, 3.5vw, 48px);
+  font-size: clamp(32px, 4vw, 54px);
   font-weight: 600;
   line-height: 1.05;
   color: var(--text);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   letter-spacing: -0.5px;
 }
 
@@ -152,24 +151,23 @@ html, body {
 .slide-subtitle {
   font-size: 13px;
   color: var(--muted);
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 /* ── METRIC CARDS ── */
 .metrics-row {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   flex-wrap: wrap;
-  margin-top: 16px;
 }
 
 .metric-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 20px 24px;
+  padding: 28px 32px;
   flex: 1;
-  min-width: 160px;
+  min-width: 180px;
   position: relative;
   overflow: hidden;
   animation: fadeUp 0.6s ease both;
@@ -199,7 +197,7 @@ html, body {
 
 .metric-value {
   font-family: 'Lora', serif;
-  font-size: clamp(28px, 3.5vw, 48px);
+  font-size: clamp(36px, 4vw, 56px);
   font-weight: 700;
   color: var(--text);
   line-height: 1;
@@ -230,14 +228,14 @@ html, body {
 }
 
 /* ── PROGRESS BAR ── */
-.progress-wrap { margin-top: 16px; }
+.progress-wrap { margin-top: 28px; }
 
 .progress-item {
   display: grid;
   grid-template-columns: 180px 1fr 80px;
   align-items: center;
   gap: 20px;
-  padding: 10px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--border);
   animation: fadeUp 0.6s ease both;
 }
@@ -274,12 +272,12 @@ html, body {
 }
 
 /* ── TIMELINE ── */
-.timeline { margin-top: 16px; position: relative; padding-left: 28px; }
+.timeline { margin-top: 28px; position: relative; padding-left: 32px; }
 
 .timeline::before {
   content: '';
   position: absolute;
-  left: 6px; top: 8px; bottom: 8px;
+  left: 8px; top: 8px; bottom: 8px;
   width: 1px;
   background: linear-gradient(180deg, var(--gold), transparent);
   opacity: 0.4;
@@ -287,59 +285,59 @@ html, body {
 
 .timeline-item {
   position: relative;
-  padding: 0 0 16px 20px;
+  padding: 0 0 32px 24px;
   animation: fadeUp 0.5s ease both;
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -22px; top: 5px;
-  width: 7px; height: 7px;
+  left: -24px; top: 6px;
+  width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--gold);
-  box-shadow: 0 0 10px rgba(201,168,76,0.5);
+  box-shadow: 0 0 12px rgba(201,168,76,0.5);
 }
 
 .timeline-date {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--gold);
   opacity: 0.75;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 
 .timeline-title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--text);
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 .timeline-desc {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* ── TWO COL ── */
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-top: 16px;
+  gap: 32px;
+  margin-top: 28px;
 }
 
 /* ── CONTENT LIST ── */
-.content-list { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+.content-list { display: flex; flex-direction: column; gap: 10px; margin-top: 28px; }
 
 .content-item {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
-  padding: 12px 18px;
+  gap: 16px;
+  padding: 18px 22px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -378,15 +376,15 @@ html, body {
 .next-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-top: 16px;
+  gap: 14px;
+  margin-top: 28px;
 }
 
 .next-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 14px;
-  padding: 18px 18px;
+  padding: 24px 22px;
   animation: fadeUp 0.5s ease both;
 }
 
@@ -445,11 +443,10 @@ html, body {
 /* ── NEXT / BACK BUTTONS ── */
 .slide-nav-btns {
   position: absolute;
-  bottom: 20px;
-  right: 72px;
+  bottom: 32px;
+  right: 80px;
   display: flex;
   gap: 8px;
-  z-index: 20;
 }
 
 .next-slide-btn, .prev-slide-btn {
@@ -579,7 +576,7 @@ html, body {
     </div>
   </div>
 
-  <div class="metrics-row" style="margin-top:20px">
+  <div class="metrics-row" style="margin-top:40px">
     <div class="metric-card highlight anim" style="transition-delay:0.4s">
       <div class="metric-label">Mobile Improvement</div>
       <div class="metric-value good">+105%</div>
@@ -637,40 +634,40 @@ html, body {
     </div>
   </div>
 
-  <div class="two-col" style="margin-top:16px">
+  <div class="two-col" style="margin-top:40px">
     <div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:10px">What drove this</div>
-      <div class="content-list" style="margin-top:0;gap:8px">
-        <div class="content-item anim" style="transition-delay:0.4s">
+      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:16px">What drove this</div>
+      <div class="content-list" style="margin-top:0;gap:10px">
+        <div class="content-item anim" style="transition-delay:0.4s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div><div class="content-text-title">Full SEO audit completed</div><div class="content-text-sub">All technical issues documented and actioned</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.5s">
+        <div class="content-item anim" style="transition-delay:0.5s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div><div class="content-text-title">404 errors fixed and redirected</div><div class="content-text-sub">Lost link equity recovered</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.6s">
+        <div class="content-item anim" style="transition-delay:0.6s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div><div class="content-text-title">robots.txt cleaned</div><div class="content-text-sub">Removed duplicate rules, improved crawlability</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.7s">
+        <div class="content-item anim" style="transition-delay:0.7s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></div>
           <div><div class="content-text-title">ALT text automated</div><div class="content-text-sub">All site images now SEO-optimised</div></div>
         </div>
       </div>
     </div>
     <div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Tools configured</div>
-      <div class="content-list" style="margin-top:0;gap:8px">
-        <div class="content-item anim" style="transition-delay:0.4s">
+      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:16px">Tools configured</div>
+      <div class="content-list" style="margin-top:0;gap:10px">
+        <div class="content-item anim" style="transition-delay:0.4s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></div>
           <div><div class="content-text-title">SEMrush Dashboard</div><div class="content-text-sub">Rank tracking and site audit active</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.5s">
+        <div class="content-item anim" style="transition-delay:0.5s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></div>
           <div><div class="content-text-title">Ahrefs Dashboard</div><div class="content-text-sub">Backlink monitoring configured</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.6s">
+        <div class="content-item anim" style="transition-delay:0.6s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></div>
           <div><div class="content-text-title">Rank Math SEO</div><div class="content-text-sub">404 monitor, redirections, image SEO active</div></div>
         </div>
@@ -718,32 +715,32 @@ html, body {
     </div>
   </div>
 
-  <div class="two-col" style="margin-top:16px">
+  <div class="two-col" style="margin-top:40px">
     <div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Landing pages live</div>
-      <div class="content-list" style="margin-top:0;gap:8px">
-        <div class="content-item anim" style="transition-delay:0.4s">
+      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:16px">Landing pages live</div>
+      <div class="content-list" style="margin-top:0;gap:10px">
+        <div class="content-item anim" style="transition-delay:0.4s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
           <div><div class="content-text-title">Affordable Business Setup <span class="pill live">Ad Running</span></div><div class="content-text-sub">3sbusinessme.com/affordable-business-setup-in-dubai</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.5s">
+        <div class="content-item anim" style="transition-delay:0.5s;padding:14px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
           <div><div class="content-text-title">Fast Business Setup <span class="pill ongoing">On Hold</span></div><div class="content-text-sub">3sbusinessme.com/fast-business-setup-in-dubai</div></div>
         </div>
       </div>
     </div>
     <div>
-      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:10px">Target niches</div>
-      <div class="content-list" style="margin-top:0;gap:8px">
-        <div class="content-item anim" style="transition-delay:0.4s">
+      <div style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:16px">Target niches</div>
+      <div class="content-list" style="margin-top:0;gap:10px">
+        <div class="content-item anim" style="transition-delay:0.4s;padding:12px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/></svg></div>
           <div><div class="content-text-title">Women entrepreneurs</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.5s">
+        <div class="content-item anim" style="transition-delay:0.5s;padding:12px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/></svg></div>
           <div><div class="content-text-title">Young entrepreneurs</div></div>
         </div>
-        <div class="content-item anim" style="transition-delay:0.6s">
+        <div class="content-item anim" style="transition-delay:0.6s;padding:12px 18px">
           <div class="content-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <div><div class="content-text-title">Fast setup &amp; special offers</div></div>
         </div>
@@ -904,6 +901,53 @@ html, body {
       <div class="next-desc">Complete deletion of identified dead pages and slugs to improve crawl efficiency.</div>
     </div>
   </div>
+  <div class="slide-nav-btns">
+    <button class="prev-slide-btn" onclick="prevSlide(this)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back
+    </button>
+    <button class="next-slide-btn" onclick="nextSlide(this)">
+      Next
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SLIDE 8 - THANK YOU
+══════════════════════════════════════ -->
+<section class="slide slide-close" data-label="Thank You">
+  <div class="cover-eyebrow anim">3S Group of Companies</div>
+  <h1 class="cover-title anim" style="font-size:clamp(36px,5vw,72px)">Thank <em>You</em></h1>
+  <p class="cover-sub anim" style="margin-top:16px;font-size:14px;max-width:400px;margin-left:auto;margin-right:auto;">Questions welcome - full data and tools available on the live SEO Dashboard.</p>
+
+  <div class="anim" style="margin-top:40px;display:flex;flex-direction:column;align-items:center;gap:16px;">
+    <a href="https://3s-dubai.github.io/seo-dashboard/" target="_blank" style="
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:14px 32px;
+      background:var(--gold-dim);
+      border:1px solid rgba(201,168,76,0.35);
+      border-radius:12px;
+      color:var(--gold-light);
+      font-family:'DM Sans',sans-serif;
+      font-size:14px;
+      font-weight:600;
+      text-decoration:none;
+      letter-spacing:0.5px;
+      transition:background 0.18s,color 0.18s,border-color 0.18s;
+    " onmouseover="this.style.background='#c9a84c';this.style.color='#000';this.style.borderColor='#c9a84c';"
+       onmouseout="this.style.background='var(--gold-dim)';this.style.color='var(--gold-light)';this.style.borderColor='rgba(201,168,76,0.35)';">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      View Live SEO Dashboard
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+    <div style="font-size:11px;color:var(--muted);opacity:0.6;letter-spacing:1px;">3s-dubai.github.io/seo-dashboard</div>
+  </div>
+
+  <div class="cover-date anim" style="margin-top:52px;">Mufeed Abdul Majeed &nbsp; SEO &amp; Digital Marketing Executive</div>
+
   <div class="slide-nav-btns">
     <button class="prev-slide-btn" onclick="prevSlide(this)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
